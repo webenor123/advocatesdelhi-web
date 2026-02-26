@@ -69,7 +69,7 @@ const services = [
 
 export default function LegalServices() {
     return (
-        <section className="py-16 md:py-24 bg-white border-t border-gray-100">
+        <section className="pt-16 md:pt-24 bg-white">
             <Container>
                 {/* Header */}
                 <div className="text-center mb-14">

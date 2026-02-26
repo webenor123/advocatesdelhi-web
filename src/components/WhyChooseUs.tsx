@@ -3,24 +3,22 @@ import Container from './Container';
 
 export default function WhyChooseUs() {
     return (
-        <section className="py-16 md:py-24 bg-white border-t border-gray-100">
+        <section className="pt-16 md:pt-24 bg-white">
             <Container>
-                <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
+                <div className="flex flex-col md:flex-row items-stretch gap-12 lg:gap-20">
 
                     {/* Left - Image */}
-                    <div className="w-full md:w-[45%] shrink-0 flex justify-center">
-                        <div className="relative w-full max-w-[420px] aspect-square">
-                            <Image
-                                src="/Law firm-bro 1.png"
-                                alt="Law firm scales of justice"
-                                fill
-                                className="object-contain"
-                            />
-                        </div>
+                    <div className="w-full md:w-[45%] shrink-0 relative min-h-[300px] md:min-h-0">
+                        <Image
+                            src="/why-client-choose-us.png"
+                            alt="Law firm scales of justice"
+                            fill
+                            className="object-contain"
+                        />
                     </div>
 
                     {/* Right - Content */}
-                    <div className="w-full md:w-[55%] text-center md:text-left">
+                    <div className="w-full md:w-[55%] text-center md:text-left flex flex-col justify-center">
                         <h2 className="text-[28px] md:text-[40px] font-semibold text-gray-900 leading-tight mb-1">
                             Why Clients Choose
                         </h2>
@@ -41,7 +39,7 @@ export default function WhyChooseUs() {
                             </p>
                         </div>
 
-                        <button className="mt-8 bg-gray-900 text-white text-[14px] font-medium px-7 py-3 rounded-md hover:bg-gray-700 transition-all duration-300">
+                        <button className="mt-8 bg-gray-900 text-white text-[14px] font-medium px-7 py-3 rounded-md hover:bg-gray-700 transition-all duration-300 w-fit mx-auto md:mx-0">
                             Enquire Now
                         </button>
                     </div>

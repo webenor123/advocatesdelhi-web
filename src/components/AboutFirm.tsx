@@ -3,7 +3,7 @@ import Container from './Container';
 
 export default function AboutFirm() {
     return (
-        <section className="py-16 md:py-24 bg-white">
+        <section className="pt-16 md:pt-24 bg-white">
             <Container>
                 <div className="flex flex-col md:flex-row items-stretch gap-12 lg:gap-20">
 

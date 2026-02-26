@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Navbar() {
     return (
@@ -8,21 +9,9 @@ export default function Navbar() {
 
                     {/* Logo Area */}
                     <Link href="/" className="flex-shrink-0 flex items-center gap-1.5 cursor-pointer">
-                        <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            className="text-black"
-                        >
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                            <path d="M2 17l10 5 10-5"></path>
-                            <path d="M2 12l10 5 10-5"></path>
-                        </svg>
+                        <div className="relative w-5 h-5 sm:w-6 sm:h-6 shrink-0">
+                            <Image src="/Advocate.png" alt="Advocate" fill className="object-contain" />
+                        </div>
                         <span className="text-red-500 font-bold text-xl leading-none">/</span>
                         <span className="font-bold text-black tracking-[0.15em] text-xs sm:text-sm uppercase whitespace-nowrap">
                             Aggarwal & Associates
